@@ -43,7 +43,7 @@ const Navbar = () => {
           backdropFilter: "blur(10px)",
           top: 0,
           zIndex: 1000,
-          
+
           textDecoration: "none",
         }}
       >
@@ -72,7 +72,7 @@ const Navbar = () => {
               </span>
             </a>
           </Link>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-lg" >
+          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-lg">
             <Link to="/">
               <a
                 className="mr-5 hover:text-gray-900"
@@ -120,50 +120,55 @@ const Navbar = () => {
           </nav>
           {userLoggedIn ? (
             <button
-            className="inline-flex items-center bg-black-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded black  "
-            onClick={handleLogout}
-            style={{background:'black',color:'white'}}
-          >
-            Logout<span><RiArrowRightSLine/></span>
-          </button>
+              className="inline-flex items-center bg-black-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded black  "
+              onClick={handleLogout}
+              style={{ background: "black", color: "white" }}
+            >
+              Logout
+              <span>
+                <RiArrowRightSLine />
+              </span>
+            </button>
           ) : (
             <>
-              <button
-                className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
-                onClick={handleclick}
-              >
-                Login
-              </button>
-              {LoginIsOpen && (
-                <Popup
-                  open={LoginIsOpen}
-                  onClose={() => {
-                    setLoginIsOpen(false);
+              <div className="flex flex-row text-bold ">
+                <button
+                  className="bg-white text-black font-bold py-0 px-8 rounded-md mr-4 hover:bg-white hover:text-black transition-colors"
+                  onClick={handleclick}
+                  style={{
+                    marginLeft: "2rem",
+                    border: "2px solid black",
+                    display: "flex",
+                    alignItems: "center",
                   }}
-                  modal
-                  nested
-                  className="center-popup"
                 >
-                  <Login />
-                </Popup>
-              )}
-              <button
-                className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
-                onClick={HandleCLickSignUp}
-              >
-                Sign-Up
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="w-4 h-4 ml-1"
-                  viewBox="0 0 24 24"
+                  <span>Login</span>
+                  <span>
+                    <RiArrowRightSLine />
+                  </span>
+                </button>
+
+                {LoginIsOpen && (
+                  <Popup
+                    open={LoginIsOpen}
+                    onClose={() => {
+                      setLoginIsOpen(false);
+                    }}
+                    modal
+                    nested
+                    className="center-popup"
+                  >
+                    <Login />
+                  </Popup>
+                )}
+                <button
+                  className="bg-black text-white py-2 px-8 rounded-md"
+                  onClick={HandleCLickSignUp}
                 >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </button>
+                  Sign-Up
+                </button>
+              </div>
+
               {SignUp && (
                 <Popup
                   open={SignUp}

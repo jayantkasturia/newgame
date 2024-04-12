@@ -9,7 +9,7 @@ const Hash = () => {
         paddingLeft: "2.25rem",
         paddingRight: "1.2",
         paddingTop: " 0.5rem",
-        paddingBottom: "5rem",
+        paddingBottom: "1rem",
       }}
     >
       <section className="text-gray-600 body-font">
@@ -29,7 +29,7 @@ const Hash = () => {
               park mlkshk tote bag selvage hot chicken authentic tumeric
               truffaut hexagon try-hard chambray.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center" style={{marginTop:'6.25rem'}}>
               <button
                 className="inline-flex items-center justify-center text-dark bg-dark-500 border-0 py-2 px-6 focus:outline-none hover:bg-black-600 rounded text-lg"
                 style={{

@@ -43,7 +43,6 @@ const Navbar = () => {
           backdropFilter: "blur(10px)",
           top: 0,
           zIndex: 1000,
-
           textDecoration: "none",
         }}
       >
@@ -51,7 +50,7 @@ const Navbar = () => {
           <Link to="/">
             <a
               className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-              style={{ margin: "20px" }}
+              style={{ margin: "-12px" }}
             >
               <svg
                 style={{ margin: "2px 13px", color: "white" }}
@@ -62,10 +61,10 @@ const Navbar = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyyn5A4gjnjhnODfd_3uVYpA1t2X7O3fxScA&usqp=CAU"
                 alt="Image"
                 className="w-32 h-32 object-cover rounded-full"
-                style={{ height: "50px", width: "50px" }}
+                style={{ height: "88px", width: "50px" }}
               />
               <span
-                className="ml-3 text-xl text-gray"
+                className="ml-3 text-4xl text-gray"
                 style={{ color: "black" }}
               >
                 Techiela

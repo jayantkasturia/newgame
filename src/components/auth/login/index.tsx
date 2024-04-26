@@ -31,11 +31,9 @@ const Login = () => {
             })
         }
     }
-
     return (
         <div>
-            {userLoggedIn && (<Navigate to={'/user'} replace={true} />)}
-
+            {userLoggedIn && (<Navigate to={'/auth/user'} replace={true} />)}
             <main className="w-full  flex self-center place-content-center place-items-center">
                 <div className=" text-gray-600 space-y-2 p-4 shadow-xl border rounded-xl">
                     <div className="text-center" >

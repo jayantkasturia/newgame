@@ -3,10 +3,12 @@ import Hash from '../components/Cparts/Hash'
 import CoursesMy from '../components/Cparts/Courses'
 import LeftHero from '../components/Cparts/LeftHero'
 import RightHero from '../components/Cparts/RightHero'
+import Navbar from '../components/Cparts/Navbar'
 
 const Home = () => {
   return (
-    <div>
+    <div >
+      <Navbar/>
       <Hash/>
       <div style={{ width: '90%', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <CoursesMy/>

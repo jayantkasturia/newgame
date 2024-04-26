@@ -1,7 +1,12 @@
 import { RiArrowRightSLine } from "react-icons/ri"; // Importing right arrow icon
 import { TypewriterEffectSmoothDemo } from "./Hero";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/authContext";
 
 const Hash = () => {
+
+  const {userLoggedIn} =useAuth();
+
   return (
     <div
       style={{
@@ -37,19 +42,21 @@ const Hash = () => {
                   color: "white",
                   boxShadow: "0px 4px 6px rgba(6,6,6)",
                 }}
+                
               >
-                <span className="flex items-center">
+                <Link to={'/auth/user'}>
+                <span className="flex items-center" >
                   Enter free
                   <RiArrowRightSLine className="ml-2" />
                 </span>
+                </Link>
               </button>
-
-              <button
+              {!userLoggedIn && <button
                 className="ml-4 font-bold inline-flex text-black-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
                 style={{ color: "black",boxShadow: "0px 4px 6px rgba(6,6,6)"}}
               >
                 Sign Up
-              </button>
+              </button>}
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

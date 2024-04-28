@@ -15,6 +15,12 @@ import Sidebar from "./components/Cparts/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Layout from "./pages/Layout";
 import { RiH1 } from "react-icons/ri";
+import About from "./pages/About";
+import Revenue from "./components/Cparts/Revenue";
+import { Plane } from "@react-three/drei";
+import Plans from "./components/Cparts/Plans";
+import Gallery from "./components/Cparts/Gallery";
+import Sponsors from "./pages/Sponsors";
 interface AuthGuardProps {
   children: React.ReactNode;
 }
@@ -40,8 +46,11 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/plans" element={<Plans/>} />
+          <Route path="/toprecruters" element={<Sponsors/>} />
           <Route
             path="/auth/*"
             element={

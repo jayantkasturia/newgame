@@ -4,8 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../contexts/authContext";
 
 const Hash = () => {
-
-  const {userLoggedIn} =useAuth();
+  const { userLoggedIn } = useAuth();
 
   return (
     <div
@@ -24,7 +23,7 @@ const Hash = () => {
               className="title-font sm:text-xl text-8xl mb-4 font-medium text-gray-900"
               style={{ fontSize: "3.25rem" }}
             >
-              <div style={{ width: "99%" }}>
+              <div style={{ width: "35%", color: "white" }}>
                 <TypewriterEffectSmoothDemo />
               </div>
             </h1>
@@ -34,7 +33,10 @@ const Hash = () => {
               park mlkshk tote bag selvage hot chicken authentic tumeric
               truffaut hexagon try-hard chambray.
             </p>
-            <div className="flex justify-center" style={{marginTop:'6.25rem'}}>
+            <div
+              className="flex justify-center"
+              style={{ marginTop: "6.25rem" }}
+            >
               <button
                 className="inline-flex items-center justify-center text-dark bg-dark-500 border-0 py-2 px-6 focus:outline-none hover:bg-black-600 rounded text-lg"
                 style={{
@@ -42,28 +44,32 @@ const Hash = () => {
                   color: "white",
                   boxShadow: "0px 4px 6px rgba(6,6,6)",
                 }}
-                
               >
-                <Link to={'/auth/user'}>
-                <span className="flex items-center" >
-                  Enter free
-                  <RiArrowRightSLine className="ml-2" />
-                </span>
+                <Link to={"/auth/user"}>
+                  <span className="flex items-center">
+                    Enter free
+                    <RiArrowRightSLine className="ml-2" />
+                  </span>
                 </Link>
               </button>
-              {!userLoggedIn && <button
-                className="ml-4 font-bold inline-flex text-black-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
-                style={{ color: "black",boxShadow: "0px 4px 6px rgba(6,6,6)"}}
-              >
-                Sign Up
-              </button>}
+              {!userLoggedIn && (
+                <button
+                  className="ml-4 font-bold inline-flex text-black-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+                  style={{
+                    color: "black",
+                    boxShadow: "0px 4px 6px rgba(6,6,6)",
+                  }}
+                >
+                  Sign Up
+                </button>
+              )}
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg"
+              src="https://www.everypixel.com/covers/free/vector/health/mental/cover.jpg"
             />
           </div>
         </div>

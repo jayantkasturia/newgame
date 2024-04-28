@@ -1,3 +1,6 @@
+import Gallery from "./Gallery";
+import Revenue from "./Revenue";
+
 const CoursesMy = () => {
   return (
     <div>
@@ -14,142 +17,171 @@ const CoursesMy = () => {
                 fontSize: "3.2rem",
               }}
             >
-              <h1 className="text-5xl font-bold text-black">Popular Courses</h1>
+              <h1 className="text-5xl font-bold text-black">
+                About Sanjivini
+              </h1>
             </div>
             <div
               className="flex flex-row justify-center font-bold"
-              style={{ width: "100%", marginBottom: "2rem", marginTop: "2rem",color:'black' }}
+              style={{
+                width: "100%",
+                marginBottom: "2rem",
+                marginTop: "2rem",
+                color: "black",
+              }}
             >
               <span
                 className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition-colors"
-                style={{ margin: "0 1rem"}}
+                style={{ margin: "0 1rem" }}
               >
-                All Programme
+                ChatBot
               </span>
               <span
                 className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition-colors"
                 style={{ margin: "0 1rem" }}
               >
-                UI/UX
+                Diet
               </span>
               <span
                 className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition-colors"
                 style={{ margin: "0 1rem" }}
               >
-                HTML
+                Health Care Center
               </span>
               <span
                 className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition-colors"
                 style={{ margin: "0 1rem" }}
               >
-                NODE JS
+                Calm Music
               </span>
               <span
                 className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition-colors"
                 style={{ margin: "0 1rem" }}
               >
-                REACT JS
+                Facial emotion recognizer
               </span>
-              
+              <span
+                className="border border-black px-4 py-2 rounded-md hover:bg-black hover:text-white transition-colors"
+                style={{ margin: "0 1rem" }}
+              >
+                Yoga Postures
+              </span>
             </div>
           </div>
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full"
-                  src="https://logowik.com/content/uploads/images/nodejs.jpg"
-                />
+          {/* photos */}
+          <section className="text-gray-600 body-font">
+            <div className="container px-5 py-24 mx-auto">
+              <div className="flex flex-wrap -m-6">
+                <div className="xl:w-1/4 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-40 rounded w-full object-cover object-center mb-6"
+                      src="https://t4.ftcdn.net/jpg/02/11/61/95/360_F_211619589_fnRk5LeZohVD1hWInMAQkWzAdyVlS5ox.jpg"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                      SUBTITLE
+                    </h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      Archarya
+                    </h2>
+                    <p
+                      className="leading-relaxed text-base"
+                      style={{ color: "black" }}
+                    >
+                      "Meet our AI-powered chatbot, Archarya! Offering
+                      personalized home remedies and stress-relief solutions.
+                      Engage in insightful conversations for holistic
+                      well-being."
+                    </p>
+                  </div>
+                </div>
+                <div className="xl:w-1/4 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-40 rounded w-full object-cover object-center mb-6"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR10EowT_-t_ZKUoa8_KMKdMVYFQagiUS1stPJ0Sk_w0A&s"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                      SUBTITLE
+                    </h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      Shalom
+                    </h2>
+                    <p
+                      className="leading-relaxed text-base"
+                      style={{ color: "black" }}
+                    >
+                      "Shalom Health Care: Uncover stress triggers and tailored
+                      remedies. Empowering you with insights and solutions for
+                      holistic well-being. Let's conquer stress together."
+                    </p>
+                  </div>
+                </div>
+                <div className="xl:w-1/4 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-40 rounded w-full object-cover object-center mb-6"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfScvyFVtoL29a8HNXtLbmiOmDSLc6_lcRkWDH7d70ck44lNI5EnuuPSuQi6ra3MLHaqk&usqp=CAU"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                      SUBTITLE
+                    </h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      Calm Music
+                    </h2>
+                    <p
+                      className="leading-relaxed text-base"
+                      style={{ color: "black" }}
+                    >
+                      "Discover rejuvenating yoga poses to refresh body and
+                      mind. Release physical tension and mental fatigue,
+                      fostering vitality and mental clarity through mindful
+                      movement."
+                    </p>
+                  </div>
+                </div>
+                <div className="xl:w-1/4 md:w-1/2 p-4">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <img
+                      className="h-40 rounded w-full object-cover object-center mb-6"
+                      src="https://www.health.com/thmb/dkSb893I2fiEUG4DyfsDblT-sSc=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc()/HLTH_MoveYourBody_YogaPoses_THUMB-LARGE-726a28603c8043eba44eb9f128f30551.jpg"
+                      alt="content"
+                    />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
+                      SUBTITLE
+                    </h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
+                      Yog Guru
+                    </h2>
+                    <p
+                      className="leading-relaxed text-base"
+                      style={{ color: "black" }}
+                    >
+                      "Discover rejuvenating yoga poses to refresh body and
+                      mind. Release physical tension and mental fatigue,
+                      fostering vitality and mental clarity through mindful
+                      movement."
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Shooting Stars
-              </h2>
-              <p className="text-base leading-relaxed mt-2">
-                Swag shoivdigoitch literally meditation subway tile tumblr
-                cold-pressed. Gastropub street art beard dreamcatcher neutra,
-                ethical XOXO lumbersexual.
-              </p>
-              <a className="text-indigo-500 inline-flex items-center mt-3">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
             </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full"
-                  src="https://thumbs.dreamstime.com/b/docker-logo-editorial-illustrative-white-background-eps-download-vector-jpeg-banner-docker-logo-editorial-illustrative-white-208329238.jpg"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                The Catalyzer
-              </h2>
-              <p className="text-base leading-relaxed mt-2">
-                Swag shoivdigoitch literally meditation subway tile tumblr
-                cold-pressed. Gastropub street art beard dreamcatcher neutra,
-                ethical XOXO lumbersexual.
-              </p>
-              <a className="text-indigo-500 inline-flex items-center mt-3">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full"
-                  src="https://logowik.com/content/uploads/images/python.jpg"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                The 400 Blows
-              </h2>
-              <p className="text-base leading-relaxed mt-2">
-                Swag shoivdigoitch literally meditation subway tile tumblr
-                cold-pressed. Gastropub street art beard dreamcatcher neutra,
-                ethical XOXO lumbersexual.
-              </p>
-              <a className="text-indigo-500 inline-flex items-center mt-3">
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+          </section>
         </div>
       </section>
+      {/* satguru photo  */}
+      <section className="text-gray-600 body-font">
+  <div className="container mx-auto flex flex-col px-5 py-5 justify-center items-center">
+    <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0-IlrFjQ_dsMsVh3XJi9e3vsoZ8dEbARank0ubYfDg&s"/>
+    <div className="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">You cannot really separate physical and mental health because health happens as a whole.</h1>
+</div>
+  </div>
+</section>
+
     </div>
   );
 };

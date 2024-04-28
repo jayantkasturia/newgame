@@ -5,10 +5,13 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import MainUser from "./MainUser";
 import Orders from "./Orders";
-import Customers from "./Customers";
+import Customers from "./Videos";
 import Products from "./Products";
 import ChatBot from "./Chat-Bot";
 import ChatOnline from "./Chat-Online";
+import Contactus from "./Contactus";
+import Calmwaves from "./Calmwaves";
+import Videos from "./Videos";
 
 const Layout = ({ children }: { children?: ReactNode }) => {
   return (
@@ -25,11 +28,12 @@ const Layout = ({ children }: { children?: ReactNode }) => {
               <Routes>
                 <Route path="/user" element={<MainUser />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/orders" element={<Orders />} />
-                <Route path="/Customers" element={<Customers />} />
+                <Route path="/Calmwaves" element={<Calmwaves />} />
+                <Route path="/videos" element={<Videos />} />
                 <Route path="/products" element={<Products/>} />
                 <Route path="/chat" element={<ChatOnline/>}/>
                 <Route path="/chatbot" element={<ChatBot/>} />
+                <Route path="/contactus" element={<Contactus/>} />
               </Routes>
             </div>
           </div>

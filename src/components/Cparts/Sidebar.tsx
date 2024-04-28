@@ -3,10 +3,12 @@ import "./Sidebar.css";
 import Homes from "../../assets/home.gif";
 import orders from "../../assets/orders.gif";
 import customers from "../../assets/customers.gif";
-import trolley from "../../assets/trolley.gif";
+import analytics from "../../assets/Analytics.gif";
 import ProfilePhoto from "../../assets/passnew.jpg";
 import chat from "../../assets/chat.gif";
 import chatBot from "../../assets/chatBot.png";
+import videos from "../../assets/videos.gif";
+import contactus from "../../assets/contactus.gif";
 import Logout from "../../assets/logout.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
@@ -40,35 +42,37 @@ const Sidebar: React.FC<sideProps> = ({  }) => {
   };
 
   const SidebarData = [
+    
     {
-      path: "/auth/dashboard",
-      icon: <img src={Homes} alt="Dashboard" />,
-      heading: "Dashboard",
+      path: "/",
+      icon: <img src={Homes} alt="orders" />,
+      heading: "Home",
     },
     {
-      path: "/auth/orders",
-      icon: <img src={orders} alt="orders" />,
-      heading: "Orders",
-    },
-    {
-      path: "/auth/customers",
+      path: "/auth/Calmwaves",
       icon: <img src={customers} alt="orders" />,
-      heading: "Customers",
+      heading: "Calm waves",
     },
     {
-      path: "/auth/products",
-      icon: <img src={trolley} alt="orders" />,
-      heading: "Products",
+      path: "/auth/videos",
+      icon: <img src={videos} alt="orders" />,
+      heading: "Videos",
     },
     {
       path: "/auth/chat",
       icon: <img src={chat} alt="orders" />,
-      heading: "Chat Online",
+      heading: "Archarya",
     },
     {
-      path: "/auth/chatbot",
-      icon: <img src={chatBot} alt="orders" style={{ filter: "invert(100%)" }} />,
-      heading: "ChatBot",
+      path: "/auth/dashboard",
+      icon: <img src={analytics} alt="orders" style={{ filter: "invert(100%)" }} />,
+      heading: "Dashboard",
+    },
+    
+    {
+      path: "/auth/ContactUs",
+      icon: <img src={contactus} style={{ filter: "invert(100%)" }} alt="orders" />,
+      heading: "Contact Us",
     },
     {
       path: "/logout",

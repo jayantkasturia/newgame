@@ -5,23 +5,31 @@ import { useState } from "react";
 export function TypewriterEffectSmoothDemo() {
   const words = [
     {
-      text: "Hey",
+      text: "SanJivini",
     },
     {
-      text: "What's",
+      text: "For",
     },
     {
-      text: "Guyzz",
+      text: "Better",
     },
     {
-      text: "From",
+      text: "Mental",
     },
     {
-      text: "Team",
+      text: "health",
       className: "text-blue-500 dark:text-blue-500",
     },
     {
-      text: "BitBuzzz :",
+      text: "Today",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "and",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+    {
+      text: "Tomorrow",
       className: "text-blue-500 dark:text-blue-500",
     },
   ];

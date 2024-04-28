@@ -86,10 +86,11 @@
     position: relative;
   }
   .chat-window .chat-body .message-container {
-    width: 100%;
+    width: 70%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
+    margin: auto;
   }
   
   .chat-window .chat-body .message-container::-webkit-scrollbar {

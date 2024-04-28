@@ -3,12 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { RiArrowRightSLine } from "react-icons/ri"; // Importing right arrow icon
-
 import Register from "../auth/register";
 import Login from "../auth/login";
 import { useAuth } from "../../contexts/authContext";
 import { doSignOut } from "../../firebase/auth";
-
+// import './Navbar.css'
 const Navbar = () => {
   const [LoginIsOpen, setLoginIsOpen] = useState(false);
   const [SignUp, setSignUp] = useState(false);
@@ -39,17 +38,20 @@ const Navbar = () => {
         style={{
           color: "black",
           opacity: "100%",
-          backgroundColor: "transparent",
           backdropFilter: "blur(10px)",
+          backgroundColor: "transparent",
           top: 0,
           zIndex: 1000,
           textDecoration: "none",
+          marginTop:'10px',
+          position:'sticky'
+
         }}
       >
-        <div className="container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center">
-          <Link to="/">
+        <div className="  container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center" style={{background:'transparent'}}> 
+          <Link to="/" >
             <a
-              className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+              className=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
               style={{ margin: "-12px" }}
             >
               <svg
@@ -58,23 +60,23 @@ const Navbar = () => {
                 viewBox="0 0 24 24"
               ></svg>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyyn5A4gjnjhnODfd_3uVYpA1t2X7O3fxScA&usqp=CAU"
+                src='https://cdn-icons-png.flaticon.com/512/2957/2957839.png'
                 alt="Image"
                 className="w-32 h-32 object-cover rounded-full"
-                style={{ height: "88px", width: "50px" }}
+                style={{ height: "50px", width: "49px" }}
               />
               <span
                 className="ml-3 text-4xl text-gray"
-                style={{ color: "black" }}
+                style={{ color: "rgb(9 102 176)" ,fontFamily:'math',fontWeight:'bolder',}}
               >
-                Techiela
+                SanJivini
               </span>
             </a>
           </Link>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-lg">
+          <nav className="  navcompo md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-lg">
             <Link to="/">
               <a
-                className="mr-5 hover:text-gray-900"
+                className="mr-5 hover:text-white-900 px-4 py-2 rounded-md hover:border-black hover:text-white transition-colors"
                 style={{ color: "black", fontWeight: "bold" }}
               >
                 Home
@@ -88,14 +90,7 @@ const Navbar = () => {
                 About
               </a>
             </Link>
-            <Link to="/Courses">
-              <a
-                className="mr-5 hover:text-gray-900"
-                style={{ color: "black", fontWeight: "bold" }}
-              >
-                Courses
-              </a>
-            </Link>
+            
             <Link to="/Plans">
               <a
                 className="mr-5 hover:text-gray-900"
@@ -113,7 +108,7 @@ const Navbar = () => {
                 className="mr-5 hover:text-gray-900"
                 style={{ color: "black", fontWeight: "bold" }}
               >
-                Top recruters
+                Top Sponsors
               </a>
             </Link>
           </nav>
@@ -121,7 +116,8 @@ const Navbar = () => {
             <button
               className="inline-flex items-center bg-black-100 border-0 py-1 px-5 focus:outline-none hover:bg-gray-200 rounded black  "
               onClick={handleLogout}
-              style={{ background: "black", color: "white" }}
+              style={{ background: "#83baec", color: "white",fontSize:" large",
+              fontWeight:" 649",color:'black' }}
             >
               Logout
               <span>

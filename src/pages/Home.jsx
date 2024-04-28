@@ -1,29 +1,40 @@
+import React, { useState, useEffect } from 'react';
+import Hash from '../components/Cparts/Hash';
+import CoursesMy from '../components/Cparts/Courses';
+import LeftHero from '../components/Cparts/LeftHero';
+import RightHero from '../components/Cparts/RightHero';
+import Navbar from '../components/Cparts/Navbar';
+import { ImagesSliderDemo } from '../components/ui/Prolanding';
+import { TextGenerateEffectDemo } from '../components/ui/TextGenerate';
+import Revenue from '../components/Cparts/Revenue';
+import Gallery from '../components/Cparts/Gallery';
+// import { GlobeDemo } from '../components/ui/GithubGlobe';
 
-import Hash from '../components/Cparts/Hash'
-import CoursesMy from '../components/Cparts/Courses'
-import LeftHero from '../components/Cparts/LeftHero'
-import RightHero from '../components/Cparts/RightHero'
-import Navbar from '../components/Cparts/Navbar'
 
 const Home = () => {
+  const [showTextDemo, setShowTextDemo] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setShowTextDemo(prevShowTextDemo => !prevShowTextDemo); 
+    }, 9000);
+    return () => clearInterval(intervalId);
+  }, []); 
   return (
-    <div >
-      <Navbar/>
-      <Hash/>
+    <div>
+      <Navbar />
+      <Hash />
+      <div style={{marginTop:"20px"}}>
+        {/* {showTextDemo && <TextGenerateEffectDemo />}  */}
+        {/* <ImagesSliderDemo /> */}
+      </div>
       <div style={{ width: '90%', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <CoursesMy/>
+        <CoursesMy />
       </div>
-      <div className='font-black flex flex-col text-5xl' style={{ width: '90%', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center',marginTop:'5rem' }}>
-        <h1>Students Perks</h1>
-      </div>
-      <div style={{ width: '86%', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <LeftHero/>
-      </div>
-      <div style={{ width: '86%', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <RightHero/>
-      </div>
+      <Revenue/>
+      <Gallery/>      
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -43,9 +43,10 @@ const Navbar = () => {
           top: 0,
           zIndex: 1000,
           textDecoration: "none",
-          marginTop:'10px',
+          marginTop:'15px',
           position:'sticky',
-          paddingTop:'0'
+          paddingTop:'0',
+          height:'43px'
 
         }}
       >

@@ -44,11 +44,12 @@ const Navbar = () => {
           zIndex: 1000,
           textDecoration: "none",
           marginTop:'10px',
-          position:'sticky'
+          position:'sticky',
+          paddingTop:'0'
 
         }}
       >
-        <div className="  container mx-auto flex flex-wrap p-1 flex-col md:flex-row items-center" style={{background:'transparent'}}> 
+        <div className="  container mx-auto flex flex-wrap p-2.25rem flex-col md:flex-row items-center" style={{background:'transparent'}}> 
           <Link to="/" >
             <a
               className=" flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -109,6 +110,14 @@ const Navbar = () => {
                 style={{ color: "black", fontWeight: "bold" }}
               >
                 Top Sponsors
+              </a>
+            </Link>
+            <Link to="http://127.0.0.1:5000/predict">
+              <a
+                className="mr-5 hover:text-gray-900"
+                style={{ color: "black", fontWeight: "bold" }}
+              >
+                Ashtang
               </a>
             </Link>
           </nav>

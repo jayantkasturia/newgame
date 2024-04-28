@@ -18,9 +18,10 @@ import { RiH1 } from "react-icons/ri";
 import About from "./pages/About";
 import Revenue from "./components/Cparts/Revenue";
 import { Plane } from "@react-three/drei";
-import Plans from "./components/Cparts/Plans";
+// import  from "./components/Cparts/";
 import Gallery from "./components/Cparts/Gallery";
 import Sponsors from "./pages/Sponsors";
+import Plans from "./components/Cparts/Plans";
 interface AuthGuardProps {
   children: React.ReactNode;
 }

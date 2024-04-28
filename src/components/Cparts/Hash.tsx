@@ -7,23 +7,34 @@ const Hash = () => {
   const { userLoggedIn } = useAuth();
 
   return (
+<div style={{ width: '100vw', height: '100vh' }}>
     <div
       style={{
-        width: "95%",
+        width: "100vw",
+        margin:"auto",
+        height:'100vh',
+        borderRadius:'30px',
+        backgroundRepeat:'no-repeat', 
         paddingLeft: "2.25rem",
         paddingRight: "1.2",
-        paddingTop: " 0.5rem",
+        paddingTop: " 2rem",
         paddingBottom: "1rem",
+        backgroundSize: "100% 100%",
+        backgroundImage: 'url(https://cdn.pixabay.com/animation/2022/10/05/15/54/15-54-38-48_512.gif)',
+        backgroundPosition: "center",
       }}
     >
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+       <div
+        className="bg-gif"
+      >
+     <section className="text-gray-600 body-font">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" style={{backgroundColor:'transparent'}}>
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1
               className="title-font sm:text-xl text-8xl mb-4 font-medium text-gray-900"
               style={{ fontSize: "3.25rem" }}
             >
-              <div style={{ width: "35%", color: "white" }}>
+              <div style={{ width: "100%", color: "white" }}>
                 <TypewriterEffectSmoothDemo />
               </div>
             </h1>
@@ -66,14 +77,12 @@ const Hash = () => {
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src="https://www.everypixel.com/covers/free/vector/health/mental/cover.jpg"
-            />
+            
           </div>
         </div>
       </section>
+    </div>
+    </div>
     </div>
   );
 };

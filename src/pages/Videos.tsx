@@ -2,7 +2,7 @@ import React from "react";
 
 const Videos: React.FC = () => {
   return (
-    <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px' }}>
+    <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px',marginTop:'39px' }}>
     <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px',width:'18rem' }}>
         <video
           className="card-img-top"
@@ -10,9 +10,8 @@ const Videos: React.FC = () => {
           controls
           style={{borderRadius:'18px'}}
         ></video>
-        <div>
-          <h1 style={{fontWeight:"bold",fontSize: "18px",fontStyle:" oblique"}}>Sabhasana</h1>
-        </div>
+      
+      
       </div>
     <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px',width:'18rem' }}>
         <video

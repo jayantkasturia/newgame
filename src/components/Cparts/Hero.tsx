@@ -5,33 +5,27 @@ import { useState } from "react";
 export function TypewriterEffectSmoothDemo() {
   const words = [
     {
-      text: "SanJivini",
+      text: "SanJivini:",
     },
     {
-      text: "For",
-    },
-    {
-      text: "Better",
+      text: "Cultivating",
     },
     {
       text: "Mental",
     },
     {
-      text: "health",
-      className: "text-blue-500 dark:text-blue-500",
+      text: "Wellness",
     },
     {
-      text: "Today",
-      className: "text-blue-500 dark:text-blue-500",
+      text: "and ",
     },
     {
-      text: "and",
-      className: "text-blue-500 dark:text-blue-500",
+      text: "well",
     },
     {
-      text: "Tomorrow",
-      className: "text-blue-500 dark:text-blue-500",
+      text: "being",
     },
+   
   ];
 
   const [LoginIsOpen, setLoginIsOpen] = useState(false);

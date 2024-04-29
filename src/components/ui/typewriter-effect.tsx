@@ -18,11 +18,11 @@ export const TypewriterEffectSmooth = ({
     return (
       <div>
         {words.map((word, idx) => (
-          <div key={`word-${idx}`} className="inline-block">
+          <div key={`word-${idx}`} className="inline-block" style={{color:'rgb(223, 255, 253)'}}>
             {word.text.split('').map((char, index) => (
-              <span
+              <span style={{color:'03C03C'}}
                 key={`char-${index}`}
-                className={cn('dark:text-white text-black ', word.className)}
+                className={cn('dark:text-white text-03C03C', word.className)}
               >
                 {char}
               </span>

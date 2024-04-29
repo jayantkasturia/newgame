@@ -1,6 +1,4 @@
-import Gallery from "./Gallery";
-import Revenue from "./Revenue";
-
+// import videobg from './Bggimage.mp4';
 const CoursesMy = () => {
   return (
     <div>

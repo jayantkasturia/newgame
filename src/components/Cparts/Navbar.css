@@ -1,11 +1,9 @@
 .navcompo > a {
     /* border: 2px solid red; */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    border-radius: 23px;
+    
 }
 
 .navcompo > a:hover {
-    background-color: black;
-    color: white;
-    border-color: black;
+    border: 2px solid black;
 }
